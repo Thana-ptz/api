@@ -7,7 +7,7 @@ const port = 3000;
 app.use(express.json());
 
 const db = createPool({
-  connectionString: 'your-postgres-connection-string',
+  connectionString: 'postgres://default:JHzhj0iP4gOA@ep-bold-fire-08860045.us-east-1.postgres.vercel-storage.com:5432/verceldb',
 });
 
 app.post('/api/add-user', async (req, res) => {
